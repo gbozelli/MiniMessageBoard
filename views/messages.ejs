@@ -1,1 +1,8 @@
-<div>messages</div>
+<form method="POST" action="/new">
+  <div>Name:</div>
+  <input type="text">
+  <div>Text:</div>
+  <input type="text">
+  <%= app.post() %>
+  <button>Send</button>
+</form>

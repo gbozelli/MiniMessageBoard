@@ -1,0 +1,65 @@
+/* public/styles.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container das mensagens */
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Item individual da mensagem */
+li {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Texto da mensagem */
+li div:first-child {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Autor da mensagem */
+li div:nth-child(2) {
+  font-weight: 600;
+  color: #4a6bdf;
+  margin-bottom: 0.3rem;
+}
+
+/* Data da mensagem */
+li div:last-child {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  li {
+    padding: 1rem;
+  }
+
+  li div:first-child {
+    font-size: 1rem;
+  }
+}
