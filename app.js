@@ -32,3 +32,7 @@ app.get("/", (req, res) => {
 app.get("/new", (req, res) => {
   res.render("messages");
 });
+
+app.post("/new", (req, res) => {
+  res.render("messages");
+});
