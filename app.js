@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
 
 const messages = [
   {
@@ -33,6 +34,13 @@ app.get("/new", (req, res) => {
   res.render("messages");
 });
 
-app.post("/new", (req, res) => {
-  res.render("messages");
+app.post('/submit', (req, res) => {
+  console.log(req.body);
+  const newMessage = {
+    text: req.body.text,
+    user: req.body.user,
+    added: new Date()
+  };
+  messages.push(newMessage);
+  res.redirect('/');
 });

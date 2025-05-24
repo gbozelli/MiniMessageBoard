@@ -8,6 +8,25 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#but{
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #4a6bdf;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 44px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 80px;
+  text-decoration: none;
+}
+
 /* Container das mensagens */
 ul {
   list-style: none;
@@ -61,5 +80,71 @@ li div:last-child {
 
   li div:first-child {
     font-size: 1rem;
+  }
+}
+
+/* Estilos para o formulário de mensagens */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  font-weight: 600;
+  color: #4a6bdf;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  border-color: #4a6bdf;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 107, 223, 0.2);
+}
+
+form button {
+  background-color: #4a6bdf;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #3a5bd9;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  form input[type="text"] {
+    padding: 0.7rem;
+  }
+
+  form button {
+    padding: 0.7rem;
   }
 }

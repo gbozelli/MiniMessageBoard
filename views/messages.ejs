@@ -1,7 +1,21 @@
-<form method="POST" action="/new">
-  <div>Name:</div>
-  <input type="text">
-  <div>Text:</div>
-  <input type="text">
-  <button>Send</button>
+<html>
+
+<head>
+  <title>Mensagens</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<form method="POST" action="/submit" class="message-form">
+  <div class="form-field">
+    <label for="user">Name:</label>
+    <input type="text" id="user" name="user" placeholder="Your name">
+  </div>
+
+  <div class="form-field">
+    <label for="text">Message:</label>
+    <input type="text" id="text" name="text" placeholder="Your message">
+  </div>
+
+  <button type="submit" class="submit-btn">Send Message</button>
 </form>
+</html>
